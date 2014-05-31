@@ -281,12 +281,12 @@
         }
 
         if ($img.length > 0) {
-          $(this).append('<a class="mediumInsert-imageRemove"></a>');
+          $(this).append('<a class="mediumInsert-imageRemove"><span class="glyphicon glyphicon-remove"></span></a>');
 
           if ($(this).parent().parent().hasClass('small')) {
-            $(this).append('<a class="mediumInsert-imageResizeBigger"></a>');
+            $(this).append('<a class="mediumInsert-imageResizeBigger"><span class="glyphicon glyphicon-resize-full"></span></a>');
           } else {
-            $(this).append('<a class="mediumInsert-imageResizeSmaller"></a>');
+            $(this).append('<a class="mediumInsert-imageResizeSmaller"><span class="glyphicon glyphicon-resize-small"></span></a>');
           }
 
           positionTop = $img.position().top + parseInt($img.css('margin-top'), 10);
