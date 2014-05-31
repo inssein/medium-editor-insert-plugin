@@ -135,28 +135,6 @@ q, blockquote {
         margin-bottom: 10px;
         vertical-align: top;
       }
-      a {
-        position: absolute;
-        top: 1em;
-        width: 30px;
-        height: 30px;
-        background-color: #3b3b3b;
-        background-repeat: no-repeat;
-        background-position: center center;
-        cursor: pointer;
-        &.mediumInsert-imageRemove {
-          right: 0;
-          background-image: url(../images/remove.png);
-        }
-        &.mediumInsert-imageResizeSmaller {
-          right: 31px;
-          background-image: url(../images/resize-smaller.png);
-        }
-        &.mediumInsert-imageResizeBigger {
-          @extend .mediumInsert-imageResizeSmaller;
-          background-image: url(../images/resize-bigger.png);
-        }
-      }
       &:first-child:after {
         content:"\a";
         white-space: pre;
